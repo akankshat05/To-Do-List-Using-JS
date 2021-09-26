@@ -1,0 +1,112 @@
+
+*{
+   margin:0;
+   padding:0;
+   box-sizing:border-box; 
+}
+body{
+    background-color: beige;
+    color: black;
+    font-style: 'Roboto Slab', serif;
+}
+header{
+    font-size:1.5rem;
+
+}
+header,form{
+    min-height:20vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+ form input,form button{
+    padding:0.5rem;
+    font-size: 2rem;
+    border:none;
+    background: white;
+}
+input:focus, textarea:focus, select:focus{
+    outline: none;
+}
+ form button{
+    border:none;
+    cursor:pointer;
+    color:chocolate;
+    transition: all 0.3s ease;
+}
+form button:hover{
+    background:chocolate;
+    color:white;
+
+}  
+
+.todo-container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.todolist{
+    
+    min-width:30%;
+    list-style: none;
+}
+
+.todo{
+    padding:0.4rem;
+    margin:0.4rem;
+    background:white;
+    font-size:1.5rem;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.todo li{
+    flex:1;
+} 
+.trash-btn,.completed-btn{
+    border:none;
+    cursor:pointer;
+    color:chocolate;
+    transition: all 0.3s ease;
+    padding:0.4rem;
+    font-size: 1.5rem;
+    background: white;
+}
+
+.trash-btn:hover{
+    background:chocolate;
+    color:white;
+}
+.completed-btn:hover{
+    background:chocolate;
+    color:white;
+
+}
+
+.fa-trash, .fa-check{
+    pointer-events: none;
+}
+
+.completed{
+    text-decoration: line-through;
+    opacity: 0.5;
+    transition: all 0.5s ease;
+}
+
+ form select{
+    margin-left: 15px;
+    padding:15px;
+    font-size: 20px;
+    border:none;
+    background: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+select{
+    width:15rem;
+    outline:none;
+    border:none;
+    color:chocolate;  
+}
+

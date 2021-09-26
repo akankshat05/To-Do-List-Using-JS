@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&family=Roboto+Slab:wght@300&display=swap" rel="stylesheet"> 
+    <title>to do list</title>
+</head>
+<body>
+<header>
+    <h1> TO DO LIST 
+    </h1>
+</header>
+    <form>
+        
+        <input type="text" class="todo-input">
+        <button class="todo-button"  type="submit">
+        <i class="fa fa-plus-square"></i>
+        </button>
+ 
+        <div class="select">
+            <select name=selectTodo class="filterTodo">
+                <option value="all">All</option>
+                <option value="completed">Completed</option>
+                <option value="uncompleted">Uncompleted</option>
+            </select>
+        </div>
+    </form>
+
+    <div class="todo-container">
+        <ul class="todolist"></ul>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
